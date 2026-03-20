@@ -1,0 +1,83 @@
+<mat-toolbar color="primary">
+      <button mat-button [routerLink]="['/']" routerLinkActive="active-link">Home</button>
+
+      <!-- Products dropdown -->
+      <button mat-button [matMenuTriggerFor]="productsMenu" routerLinkActive="active-link">
+        Products
+      </button>
+      <mat-menu #productsMenu="matMenu">
+        <button mat-menu-item [routerLink]="['/products','list']" routerLinkActive="active-item">
+          <mat-icon>format_list_bulleted</mat-icon>
+          <span>All Products</span>
+        </button>
+        <button mat-menu-item [routerLink]="['/products', 101]" routerLinkActive="active-item">
+          <mat-icon>shopping_bag</mat-icon>
+          <span>Product #101</span>
+        </button>
+        <button mat-menu-item [routerLink]="['/products','list']" [queryParams]="{ category:'deals' }" routerLinkActive="active-item">
+          <mat-icon>local_offer</mat-icon>
+          <span>Deals</span>
+        </button>
+      </mat-menu>
+
+      <!-- Account dropdown -->
+      <button mat-button [matMenuTriggerFor]="accountMenu" routerLinkActive="active-link">
+        Account
+      </button>
+      <mat-menu #accountMenu="matMenu">
+        <button mat-menu-item [routerLink]="['/account','profile']" routerLinkActive="active-item">
+          <mat-icon>person</mat-icon>
+          <span>Profile</span>
+        </button>
+        <button mat-menu-item [routerLink]="['/account','settings']" routerLinkActive="active-item">
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+      </mat-menu>
+
+      <span class="spacer"></span>
+
+      <app-language-switcher></app-language-switcher>
+
+      <!-- Auth buttons -->
+      <button mat-button [routerLink]="['/login']" *ngIf="!(isAuthenticated$ | async)">
+        <mat-icon>login</mat-icon>
+        {{ 'auth.login' | translate }}
+      </button>
+
+      <button mat-button [matMenuTriggerFor]="userMenu" *ngIf="isAuthenticated$ | async">
+        <mat-icon>account_circle</mat-icon>
+        {{ currentUser?.name || currentUser?.email }}
+      </button>
+      <mat-menu #userMenu="matMenu">
+        <button mat-menu-item [routerLink]="['/account','profile']">
+          <mat-icon>person</mat-icon>
+          <span>Profile</span>
+        </button>
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>logout</mat-icon>
+          <span>{{ 'auth.logout' | translate }}</span>
+        </button>
+      </mat-menu>
+
+      <button mat-stroked-button color="accent" [routerLink]="['/products','list']" [queryParams]="{ q:'laptop', page:1 }">
+        Search Laptops
+      </button>
+    </mat-toolbar>
+
+    <main>
+
+      <!--
+    <h2>Read XLSX → JSON</h2>
+
+    <input type="file"
+           accept=".xlsx,.xls"
+           (change)="onFileChange($event)" />
+
+    <pre *ngIf="jsonText() as jt">{{ jt }}</pre>
+
+  -->
+
+
+      <router-outlet></router-outlet>
+    </main>

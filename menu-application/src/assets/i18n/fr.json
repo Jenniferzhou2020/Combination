@@ -1,0 +1,56 @@
+{
+  "auth": {
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "email": "Email",
+    "password": "Mot de passe",
+    "remember_me": "Se souvenir de moi",
+    "forgot_password": "Mot de passe oublié?",
+    "login_success": "Connexion réussie",
+    "logout_success": "Déconnexion réussie",
+    "unauthorized": "Non autorisé. Veuillez vous reconnecter.",
+    "session_expired": "Votre session a expiré. Veuillez vous reconnecter."
+  },
+  "errors": {
+    "network_error": "Impossible de se connecter au serveur. Veuillez vérifier votre connexion Internet.",
+    "bad_request": "Mauvaise requête. Veuillez vérifier votre saisie.",
+    "unauthorized": "Non autorisé. Veuillez vous reconnecter.",
+    "forbidden": "Accès interdit. Vous n'avez pas la permission d'accéder à cette ressource.",
+    "not_found": "Ressource introuvable.",
+    "timeout": "Délai d'attente dépassé. Veuillez réessayer.",
+    "conflict": "Conflit. La ressource existe déjà.",
+    "validation_error": "Erreur de validation. Veuillez vérifier votre saisie.",
+    "rate_limit": "Trop de requêtes. Veuillez réessayer plus tard.",
+    "server_error": "Erreur interne du serveur. Veuillez réessayer plus tard.",
+    "bad_gateway": "Passerelle incorrecte. Le serveur est temporairement indisponible.",
+    "service_unavailable": "Service indisponible. Veuillez réessayer plus tard.",
+    "gateway_timeout": "Délai d'attente de la passerelle. Le serveur a mis trop de temps à répondre.",
+    "unknown_error": "Une erreur inattendue s'est produite."
+  },
+  "common": {
+    "welcome": "Bienvenue",
+    "home": "Accueil",
+    "products": "Produits",
+    "account": "Compte",
+    "settings": "Paramètres",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "confirm": "Confirmer",
+    "yes": "Oui",
+    "no": "Non",
+    "loading": "Chargement...",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "language": "Langue"
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "email_invalid": "Veuillez entrer une adresse email valide",
+    "password_min_length": "Le mot de passe doit contenir au moins 8 caractères",
+    "password_mismatch": "Les mots de passe ne correspondent pas"
+  }
+}

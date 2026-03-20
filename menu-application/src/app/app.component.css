@@ -1,0 +1,4 @@
+.spacer { flex: 1 1 auto; }
+    .active-link, .active-item { font-weight: 600; }
+    mat-toolbar { position: sticky; top: 0; z-index: 1000; }
+    main { padding: 16px; }

@@ -1,0 +1,56 @@
+{
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "remember_me": "Remember me",
+    "forgot_password": "Forgot password?",
+    "login_success": "Login successful",
+    "logout_success": "Logout successful",
+    "unauthorized": "Unauthorized. Please login again.",
+    "session_expired": "Your session has expired. Please login again."
+  },
+  "errors": {
+    "network_error": "Unable to connect to server. Please check your internet connection.",
+    "bad_request": "Bad request. Please check your input.",
+    "unauthorized": "Unauthorized. Please login again.",
+    "forbidden": "Access forbidden. You do not have permission to access this resource.",
+    "not_found": "Resource not found.",
+    "timeout": "Request timeout. Please try again.",
+    "conflict": "Conflict. The resource already exists.",
+    "validation_error": "Validation error. Please check your input.",
+    "rate_limit": "Too many requests. Please try again later.",
+    "server_error": "Internal server error. Please try again later.",
+    "bad_gateway": "Bad gateway. The server is temporarily unavailable.",
+    "service_unavailable": "Service unavailable. Please try again later.",
+    "gateway_timeout": "Gateway timeout. The server took too long to respond.",
+    "unknown_error": "An unexpected error occurred."
+  },
+  "common": {
+    "welcome": "Welcome",
+    "home": "Home",
+    "products": "Products",
+    "account": "Account",
+    "settings": "Settings",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "loading": "Loading...",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "language": "Language"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email_invalid": "Please enter a valid email address",
+    "password_min_length": "Password must be at least 8 characters",
+    "password_mismatch": "Passwords do not match"
+  }
+}

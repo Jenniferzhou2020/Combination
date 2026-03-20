@@ -1,0 +1,25 @@
+<h2>Product List</h2>
+
+    <div class="filters">
+      <button mat-stroked-button color="primary"
+              [routerLink]="['/products','list']"
+              [queryParams]="{ category: 'deals' }"
+              routerLinkActive="active-item">
+        Show Deals
+      </button>
+      <button mat-stroked-button
+              [routerLink]="['/products','list']"
+              [queryParams]="{ category: null }">
+        Clear Filter
+      </button>
+    </div>
+
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['/products', 101]">Product 101</a>
+      <a mat-list-item [routerLink]="['/products', 102]">Product 102</a>
+      <a mat-list-item [routerLink]="['/products', 103]">Product 103</a>
+    </mat-nav-list>
+
+    <p *ngIf="category">
+      Current category filter: <strong>{{ category }}</strong>
+    </p>
