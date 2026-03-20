@@ -1,0 +1,57 @@
+<title>GDCS Application</title>
+<header class="app-header gdct-header" id="gdct-header">
+  <div class="page" style="{{BackgroundStyle}}">
+    <div class="sticky-wrapper">
+
+      <div class="logo site-logo">
+        <div>
+          <img src="/assets/images/logosymbol1.png" alt="Ontario Government Logo" class="logo" />
+        </div>
+      </div>
+      <div class="header-text">
+        <h1>Government of Ontario | GDCS</h1>
+        <p>Generic Data Collection System</p>
+      </div>
+      <div class="header-right">
+        <div *ngIf="vm.isAuth()">
+          <button class="btn btn-outline-danger btn-sm" (click)="facade.logout()">Logout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="app-main">
+
+  <button matButton [matMenuTriggerFor]="aboveMenu">Above</button>
+  <!-- #docregion menu-position -->
+  <mat-menu #aboveMenu="matMenu" yPosition="above">
+    <!-- #enddocregion menu-position -->
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+  <button matButton [matMenuTriggerFor]="belowMenu">Below</button>
+  <mat-menu #belowMenu="matMenu" yPosition="below">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+  <button matButton [matMenuTriggerFor]="beforeMenu">Before</button>
+  <mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+  <button matButton [matMenuTriggerFor]="afterMenu">After</button>
+  <mat-menu #afterMenu="matMenu" xPosition="after">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+  <!-- <h1 id="tableLabel">Home</h1> -->
+
+  <router-outlet></router-outlet>
+</main>
+
+
+
+<!-- FOOTER (always visible) -->
+<footer class="app-footer">
+  <small>© v1.0.0 ROAD</small>
+</footer>

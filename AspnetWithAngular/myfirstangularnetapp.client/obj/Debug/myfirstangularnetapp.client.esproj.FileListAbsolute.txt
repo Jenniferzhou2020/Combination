@@ -1,0 +1,1 @@
+C:\Workspace\MyFirstAngularNetApp\myfirstangularnetapp.client\obj\Debug\myfirstangularnetapp.client.esproj.CoreCompileInputs.cache

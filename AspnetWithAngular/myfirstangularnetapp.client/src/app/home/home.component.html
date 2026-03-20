@@ -1,0 +1,46 @@
+<title>Home</title>
+
+<div class="combined-content">
+  <h1>Hello,  {{ facade.user()?.fullName || facade.user()?.email }} </h1>
+  <p class="centered">Welcome to GDCS WebApp.</p>
+
+
+  <h2>GDCS (Generic Data Collection System)</h2>
+  <p class="left-aligned">GDCS is a powerful web application designed to streamline data collection for business users. It enables efficient gathering of data from both internal and external users, simplifying the review and analysis process.</p>
+
+  <h2>Key Features:</h2>
+  <ul class="key-features-list">
+    <li><strong>COA (Chapter of Accounts) Management</strong> – Organize and manage financial accounts with ease.</li>
+    <li><strong>Template Management</strong> – Design, approve, and publish templates using online/offline tools.</li>
+    <li><strong>Submission Management</strong> – Facilitate seamless data submission and approval workflows.</li>
+    <li><strong>Reporting</strong> – Generate insights with comprehensive reporting capabilities.</li>
+    <li><strong>User & Role Management</strong> – Control access and permissions for secure collaboration.</li>
+  </ul>
+  <p class="left-aligned">GDCS empowers businesses to collect, manage, and analyze data efficiently, saving time and improving decision-making.</p>
+</div>
+
+
+<!--
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!forecasts$"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
+
+<table *ngIf="forecasts$">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Temp. (C)</th>
+      <th>Temp. (F)</th>
+      <th>Summary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let forecast of (forecasts$ | async)">
+      <td>{{ forecast.date }}</td>
+      <td>{{ forecast.temperatureC }}</td>
+      <td>{{ forecast.temperatureF }}</td>
+      <td>{{ forecast.summary }}</td>
+    </tr>
+  </tbody>
+</table>
+  -->
